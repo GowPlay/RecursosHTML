@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <style>
+        label{
+            font-size: 8px;
+            font-family: Segoe UI;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <center>
+            <h3>Registro de usuario</h3>
+        </center>
+        <label for="pnombre">Primer nombre *</label>
+        <input type="text" name="nombreUno" id="pnombre" required placeholder="Digite su primer nombre">
+        <label for="snombre">Segundo nombre </label>
+        <input type="text" name="nombreDos" id="snombre" placeholder="Digite su segundo nombre">
+
+        <label for="papellido">Primer apellido *</label>
+        <input type="text" name="apellidoUno" id="papellido" required placeholder="Digite su primer apellido">
+        <label for="sapellido">Segundo apellido </label>
+        <input type="text" name="apellidoDos" id="sapellido" placeholder="Digite su segundo apellido">
+
+        <label for="email"> Email *</label>
+        <input type="email" name="email" id="email" placeholder="Digite el correo electronico">
+
+        <label for="password"> Password *</label>
+        <input type="password" name="password" id="password"placeholder="*************">
+        <br>
+        <br>
+        <center>
+            <select name="" id="">
+                <optgroup label="Nacionalidad">
+                    <option>Nacionalidad</option>
+                    <option value="COL">Colombia</option>
+                    <option value="VEN">Venezuela</option>
+                    <option value="ALE">Alemania</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="BR">Brasil</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Registro">
+        </center>
+    </form>
+</body>
+</html>

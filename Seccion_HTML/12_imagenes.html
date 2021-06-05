@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--🍀 Imagenes 🍀-->
+    <img src="./img/lenovo.jpg" alt=" PC Lenovo" style="width: 100px; height: 100px;">
+    <img src="https://img.autocosmos.com/noticias/fotosprinc/NAZ_b65480612b9249c0885a3ec88c5641e1.jpg" alt="Imagen de internet" style="height: 100px; width: 100px;">
+    <!-- 
+        |Formatos de Imagenes
+        - APNG  ( .apng )
+        - GIF   ( .gif  )
+        - ICO   ( .ico - .cur )
+        - JPEG  ( .jpg - .jpeg
+                  .jfif - .pjpeg
+                  .pjp  )
+        - PNG   ( .png )
+        - SVG   ( .svg )
+     -->
+     <picture>
+         <source media="(min-width:650px)" srcset="./img/lenovo.jpg">
+         <source media="(min-width:400px)" srcset="https://img.autocosmos.com/noticias/fotosprinc/NAZ_b65480612b9249c0885a3ec88c5641e1.jpg">
+         <img src="./img/mar.jpg" alt=" mar" style="width: auto;">
+    </picture>
+</body>
+</html>

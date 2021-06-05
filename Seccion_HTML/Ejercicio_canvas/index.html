@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            width: 99%;
+            margin: 5 auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #myCanvas{
+            border: 3px solid rgb(238, 255, 2);
+            background: rgba(4, 66, 17, 0.89);
+        }
+    </style>
+    <script>
+        let canvas, ctx;
+        let colorA = "blue";
+        let Element = (x, y, ancho, largo, data) =>{
+            this.x = x
+            this.y = y
+            this.ancho = ancho
+            this.largo = largo
+            this.data = data
+            this.pintar = pintarCarta 
+        }
+        let pintarCarta = () =>{
+            ctx.fillStyle = colorA
+            ctx.fillRect(this.x, this.y, this.ancho, this.largo)
+        }
+        let tablero = ()=>{
+            let i,element;
+            let x = inicioX, y = inicioY;
+            for (let i = 0; i < 9; i++) {
+               element = new Element(x, y, elementAncho, elementLargo, i)
+               elements_array.push(element)
+               element.pintar();
+            //    
+               element = new Element(x, y, elementAncho, elementLargo, i)
+               elements_array.push(element)
+               element.pintar();
+            }
+        }
+        window.onload = () =>{
+            canvas = document.getElementById("myCanvas")
+            if (canvas && canvas.getContext) {
+                ctx = canvas.getContext("2d")
+                if (ctx) {
+                    tablero()
+                }else {
+                    alert("Error al crear el elemento")
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <h1> Juego Elemento Canvas</h1>
+        <canvas id="myCanvas" width="100%" height="100%">
+           Error - Tu navegador no soporta los elementos canvas 
+        </canvas>
+    </main>
+</body>
+</html>
